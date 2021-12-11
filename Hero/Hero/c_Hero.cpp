@@ -32,7 +32,19 @@ void c_Hero::print()
 	std::cout << "Health: " << this->health << "\tDamage: " << this->damag << "\n";
 }
 
-int c_Hero::hit()
+void c_Hero::hit()
 {
-	return this->health-=10;
+	this->damag-=10;
+}
+
+void c_Hero::protection()
+{
+	this->health -= 10;
+	this->damag -= 10;
+}
+
+void c_Hero::go()
+{
+	this->damag += 10;
+	
 }
