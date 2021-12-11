@@ -10,5 +10,6 @@ public:
 	void steHealth(int);
 	void setDamage(int);
 	void print();
+	int hit();
 };
 

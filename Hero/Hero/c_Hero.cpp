@@ -31,3 +31,8 @@ void c_Hero::print()
 {
 	std::cout << "Health: " << this->health << "\tDamage: " << this->damag << "\n";
 }
+
+int c_Hero::hit()
+{
+	return this->health-=10;
+}
