@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     c_Hero c_hero;
-    
     int vibor;
     do
     {
@@ -37,7 +36,7 @@ int main()
             c_hero.protection();
             system("cls");
             break;
-        case 3:
+        case 3: case 4: case 5: case 6:
             system("cls");
             if (c_hero.getHealth() < 100 && c_hero.getDamage()<100)
             {
@@ -68,8 +67,4 @@ int main()
     {
         cout << "Your hero died!!!\n";
     }
-   
-    
-   
 }
-
